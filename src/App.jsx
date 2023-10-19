@@ -1,8 +1,14 @@
+import Navbar from "./components/Navbar";
+import Hero from "./sections/Hero";
+import Trendy from "./sections/Trendy";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-red-300">hello</h1>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Trendy />
+    </>
   );
 };
 
