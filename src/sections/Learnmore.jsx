@@ -2,7 +2,7 @@ import hi from "./../assets/img/Group 880.png";
 
 const Learnmore = () => {
   return (
-    <div class="md:flex items-center justify-center h-screen ">
+    <div class="md:flex items-center justify-center h-screen pb-[80px] ">
       <div class="md:flex justify-center items-center p-10 ">
         <div class=" mt-4 md:mt-0 md:ml-6 ">
           <h1
