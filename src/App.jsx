@@ -4,6 +4,7 @@ import Trendy from "./sections/Trendy";
 import Learnmore from "./sections/Learnmore";
 import Categories from "./sections/Categories";
 import Instagram from "./sections/Instagram";
+import HealthJapanese from "./sections/HealthJapanese";
 const App = () => {
   return (
     <>
@@ -11,8 +12,9 @@ const App = () => {
       <Hero />
       <Trendy />
       <Categories />
-      <Instagram />
       <Learnmore />
+      <Instagram />
+      <HealthJapanese />
     </>
   );
 };

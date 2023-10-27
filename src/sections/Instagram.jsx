@@ -129,9 +129,19 @@ function SimpleSlider(props) {
 
 function Instagram() {
   return (
-    <div className="pt-12 bg-gradient-to-b from-transparent via-green-50 to-[#E7F9FD]">
-      <div className="flex flex-col items-center justify-center ">
-        <h1 className="font-semibold leading-tight lg:text-5xl md:text-[30px] sm:text-[30px]">
+    <div className="pb-[50px]">
+    <div className=" bg-gradient-to-b from-transparent via-green-50 to-[#E7F9FD]">
+      <div className=" text-center ">
+        <h1 className=" xl:text-[60px]
+         lg:text-[50px]
+         leading-tight
+         font-semibold
+         text-gray-900
+         md:text-clip
+         md:inline
+         md:text-[40px]
+         sm:text-[39px]
+         max-sm:text-[30px]  ">
           Check out @foodieland on Instagram
         </h1>
         <p className="text-center mt-5 text-gray-500 lg:text-[15px] md:text-[10px] sm:text-[10px]">
@@ -140,9 +150,9 @@ function Instagram() {
           minim
         </p>
       </div>
-      <div className="pb-5 pt-20">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1  max-w-screen-xl gap-10 mx-auto justify-items-center">
-          <div className="bg-white w-[300px] lg:w-[260px] md:w-[300px] sm:w-[300px]">
+      <div className="pb-5 pt-[40px] w-[100%]">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1  max-w-screen-xl gap-[30px] mx-auto justify-items-center w-[90%]">
+          <div className="bg-white w-[300px] lg:w-[100%] md:w-[300px] sm:w-[300px]">
             <div className="pt-3 flex justify-center items-center">
               <SimpleSlider srcs={[pick1, pick2, pick3, pick4]} />
             </div>
@@ -165,7 +175,7 @@ function Instagram() {
             </div>
           </div>
 
-          <div className="bg-white w-[300px] lg:w-[260px] md:w-[300px] sm:w-[300px]">
+          <div className="bg-white w-[300px] lg:w-[100%] md:w-[300px] sm:w-[300px]">
             <div className="pt-3">
               <SimpleSlider srcs={[ pick2, pick1, pick3, pick4]} />
             </div>
@@ -188,7 +198,7 @@ function Instagram() {
             </div>
           </div>
 
-          <div className="bg-white w-[300px] lg:w-[260px] md:w-[300px] sm:w-[300px]">
+          <div className="bg-white w-[300px] lg:w-[100%] md:w-[300px] sm:w-[300px]">
             <div className="pt-3">
               <SimpleSlider srcs={[ pick3, pick2, pick1, pick4]} />
             </div>
@@ -211,7 +221,7 @@ function Instagram() {
             </div>
           </div>
 
-          <div className="bg-white w-[300px] lg:w-[260px] md:w-[300px] sm:w-[300px]">
+          <div className="bg-white w-[300px] lg:w-[100%] md:w-[300px] sm:w-[300px]">
             <div className="pt-3">
               <SimpleSlider srcs={[ pick4, pick1, pick2, pick3]} />
             </div>
@@ -235,6 +245,7 @@ function Instagram() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
