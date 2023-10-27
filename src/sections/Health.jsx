@@ -23,7 +23,7 @@ function Health() {
     <div>
       <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col justify-between items-center ">
         <div className="space-x-4 flex flex-col items-center text-center lg:w-[800px] md:w-[100%]">
-          <h1 className="lg:pl-[70px]  xl:text-[60px]
+          <h1 className="lg:pl-[70px] md:pl-[70px] sm:pl-[70px] pl-[20px]  xl:text-[60px]
          lg:text-[50px]
          leading-tight
          font-semibold
@@ -36,7 +36,7 @@ function Health() {
             Health Japanese Fried Rice
           </h1>
           <div className="lg:pl-[150px] flex flex-row items-center justify-center lg:text-[20px]">
-            <div className="flex flex-row items-center justify-center lg:w-[190px] md:w-[140px] sm:w-[120px] w-[90px]">
+            <div className="flex flex-row items-center justify-center lg:w-[190px] md:w-[140px] sm:w-[120px] w-[60px]">
               <div>
                 <img className="min-w-[30px] max-w-[50px] lg:block md:block sm:hidden hidden" src={avatar2}></img>
               </div>
@@ -132,8 +132,11 @@ function Health() {
       </div>
       <div className="text-[#00000099] lg:p-[80px] md:p-[60px] sm:p-[40px] p-[30px]">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+      </div>  
+         
+         
     </div>
   );
 }
+
 export default Health;

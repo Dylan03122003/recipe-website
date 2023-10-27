@@ -4,9 +4,7 @@ import Trendy from "./sections/Trendy";
 import Learnmore from "./sections/Learnmore";
 import Categories from "./sections/Categories";
 import Instagram from "./sections/Instagram";
-import Health from "./sections/Health";
-import Ingredients from "./sections/Ingredients";
-import Directions from "./sections/Directions";
+import HealthJapanese from "./sections/HealthJapanese";
 const App = () => {
   return (
     <>
@@ -16,9 +14,7 @@ const App = () => {
       <Categories />
       <Learnmore />
       <Instagram />
-      <Health />
-      <Ingredients />
-      <Directions />
+      <HealthJapanese />
     </>
   );
 };
