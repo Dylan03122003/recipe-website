@@ -184,9 +184,6 @@
 }
 
 @media screen and (max-width: 860px) {
-  .header-delicious {
-    /* margin-top: 20px; */
-  }
   .menu-delicious .dish-delicious {
     max-width: 220px;
   }

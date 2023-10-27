@@ -6,6 +6,7 @@ import Categories from "./sections/Categories";
 import Instagram from "./sections/Instagram";
 import TastyRecipe from "./sections/TastyRecipe";
 import DeliciousRecipe from "./sections/DeliciousRecipe";
+import HealthJapanese from "./sections/HealthJapanese";
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
       <Instagram />
       <Learnmore />
       <DeliciousRecipe />
+      <HealthJapanese />
     </>
   );
 };
