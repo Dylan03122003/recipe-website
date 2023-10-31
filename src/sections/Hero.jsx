@@ -4,9 +4,9 @@ import people from "./../assets/img/hero_people.png"
 import like from "./../assets/img/like.png"
 
 const Hero = () => {
-  return <div className="relative container m-auto box-border mt-[40px]">
-    <img src={bg} alt="" className="absolute xl:h-[650px] right-0 rounded-[5%] w-[80%] object-cover lg:h-[500px] h-[450px] max-md:hidden" />
-    <div className="relative bg-[#E7FAFE] xl:h-[650px] w-[50%] rounded-l-[5%] xl:p-[50px] lg:h-[500px] lg:p-[30px] h-[450px]  p-[20px] max-md:w-[100%] max-md:p-[30px] max-md:rounded-[5%] max-md:h-fit">
+  return <div className="relative container m-auto box-border py-[40px]">
+    <img src={bg} alt="" className="absolute xl:h-[650px] right-0 rounded-[5%] w-[80%] object-cover lg:h-[500px] h-[450px] max-[1023px]:h-[550px] max-md:hidden" />
+    <div className="relative bg-[#E7FAFE] xl:h-[650px] w-[50%] rounded-l-[5%] xl:p-[50px] lg:h-[500px] lg:p-[30px] h-[450px]  p-[20px] max-md:w-[100%] max-md:p-[30px] max-md:rounded-[5%] max-md:h-fit max-[1023px]:h-[550px]">
       <div>
         <div className="xl:w-[156px] xl:h-[45px] rounded-[30px] flex bg-white gap-[13px] justify-center	items-center w-[125px] h-[35px]">
           <img src={sach} alt="" className="xl:w-[24px] xl:h-[24px] w-[20px] h-[20px]" />
