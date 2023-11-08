@@ -7,6 +7,7 @@ import Instagram from "./sections/Instagram";
 import TastyRecipe from "./sections/TastyRecipe";
 import DeliciousRecipe from "./sections/DeliciousRecipe";
 import HealthJapanese from "./sections/HealthJapanese";
+// import Delcious from "./sections/Delicious";
 const App = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const App = () => {
       <Learnmore />
       <DeliciousRecipe />
       <HealthJapanese />
+      {/* <Delcious /> */}
     </>
   );
 };
