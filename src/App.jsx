@@ -1,24 +1,20 @@
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./sections/Hero";
-import Trendy from "./sections/Trendy";
-import Learnmore from "./sections/Learnmore";
-import Categories from "./sections/Categories";
-import Instagram from "./sections/Instagram";
-import TastyRecipe from "./sections/TastyRecipe";
-import DeliciousRecipe from "./sections/DeliciousRecipe";
-import HealthJapanese from "./sections/HealthJapanese";
+import Home from "./pages/Home";
+import Blog from "./sections/Blog";
+import BlogList from "./sections/BlogList";
+import RecipeDetail from "./sections/RecipeDetail";
+
 const App = () => {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Trendy />
-      <Categories />
-      <TastyRecipe />
-      <Instagram />
-      <Learnmore />
-      <DeliciousRecipe />
-      <HealthJapanese />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/recipes/:recipeID" element={<RecipeDetail />} />
+        <Route path="/blogs" element={<BlogList />} />
+        <Route path="/blogs/:blogID" element={<Blog />} />
+      </Routes>
     </>
   );
 };
