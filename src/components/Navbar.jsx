@@ -48,7 +48,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   className="hover:border-b-4 hover:border-[#d8d8d8]"
-                  to={``}
+                  to={`/more-recipes`}
                 >
                   Recipes
                 </Link>
@@ -78,7 +78,10 @@ const Navbar = () => {
             <Link className="hover:border-b-4 hover:border-[#d8d8d8]" to={`/`}>
               Home
             </Link>
-            <Link className="hover:border-b-4 hover:border-[#d8d8d8]" to={``}>
+            <Link
+              className="hover:border-b-4 hover:border-[#d8d8d8]"
+              to={`/more-recipes`}
+            >
               Recipes
             </Link>
             <Link

@@ -14,7 +14,7 @@ import people6 from "./../assets/img/listblog_people6.png";
 const blog1 = {
   blogID: 1,
   blogImg: img1,
-  title: "Crochet Projects for Noodle Lovers",
+  title: "Hello",
   description:
     "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim",
   authorImg: people1,
