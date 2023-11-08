@@ -14,7 +14,7 @@ import people6 from "./../assets/img/listblog_people6.png";
 const blog1 = {
   blogID: 1,
   blogImg: img1,
-  title: "Hello",
+  title: "Crochet Projects for Noodle Lovers",
   description:
     "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim",
   authorImg: people1,
@@ -46,7 +46,7 @@ const blog1 = {
 const blog2 = {
   blogID: 2,
   blogImg: img2,
-  title: "Crochet Projects for Noodle Lovers",
+  title: "10 Vegetarian Recipes To Eat This Month",
   description:
     "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim",
   authorImg: people2,
@@ -78,7 +78,7 @@ const blog2 = {
 const blog3 = {
   blogID: 3,
   blogImg: img3,
-  title: "Crochet Projects for Noodle Lovers",
+  title: "Full Guide to Becoming a Professional Chef",
   description:
     "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim",
   authorImg: people3,
@@ -110,7 +110,7 @@ const blog3 = {
 const blog4 = {
   blogID: 4,
   blogImg: img4,
-  title: "Crochet Projects for Noodle Lovers",
+  title: "Simple & Delicious Vegetarian Lasagna",
   description:
     "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim",
   authorImg: people4,
@@ -142,7 +142,7 @@ const blog4 = {
 const blog5 = {
   blogID: 5,
   blogImg: img5,
-  title: "Crochet Projects for Noodle Lovers",
+  title: "Plantain and Pinto Stew with Aji Verde",
   description:
     "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim",
   authorImg: people5,
@@ -174,7 +174,7 @@ const blog5 = {
 const blog6 = {
   blogID: 6,
   blogImg: img6,
-  title: "Crochet Projects for Noodle Lovers",
+  title: "We’re Hiring a Communications Assistant!",
   description:
     "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim",
   authorImg: people6,

@@ -1,10 +1,13 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getRecipeInformation } from "../api/recpie";
+import { apiKey } from "../api/recpie";
+import Loader from "../components/Loader";
 
 const MoreRecipeDetail = () => {
   const { recipeID } = useParams();
   const recipeIDNumber = parseInt(recipeID);
+  const [isLoading, setIsLoading] = useState(false);
 
   const [recipeDetail, setRecipeDetail] = useState({
     id: recipeIDNumber,
@@ -31,8 +34,31 @@ const MoreRecipeDetail = () => {
   });
 
   useEffect(() => {
-    getRecipeInformation(recipeIDNumber, setRecipeDetail);
+    const getRecipeInformation = async () => {
+      setIsLoading(true);
+      const reponse = await axios.get(
+        `https://api.spoonacular.com/recipes/${recipeID}/information`,
+        {
+          params: {
+            apiKey: apiKey,
+          },
+        }
+      );
+
+      const data = reponse.data;
+      setRecipeDetail(data);
+      setIsLoading(false);
+    };
+
+    getRecipeInformation();
   }, []);
+
+  if (isLoading)
+    return (
+      <div className="flex justify-center items-start mt-10">
+        <Loader />
+      </div>
+    );
 
   return (
     <div className="py-5 px-4 md:px-40">
@@ -59,12 +85,15 @@ const MoreRecipeDetail = () => {
           HealthScore:{" "}
           <span className="font-semibold">{recipeDetail.healthScore}</span>
         </p>
-        <p className="mt-2 text-gray-600">
+        <p className="mt-2 mb-2 text-gray-600">
           Price:{" "}
           <span className="font-semibold">{recipeDetail.pricePerServing}</span>{" "}
         </p>
-        <a className="mt-2" href={`${recipeDetail.sourceUrl}`}>
-          Source
+        <a
+          className="text-blue-600 border-b-[1px] border-solid border-blue-400"
+          href={`${recipeDetail.sourceUrl}`}
+        >
+          Original Source
         </a>
         <h2 className="text-xl mt-5 font-semibold text-gray-600">Summary</h2>
         <div

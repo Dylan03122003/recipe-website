@@ -1,7 +1,7 @@
-import contact from "./../assets/img/Contact.png";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import contact from "./../assets/img/Contact.png";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -38,14 +38,13 @@ function Contact() {
     if (!name) {
       return;
     }
-    
 
     if (name.length < 5) {
       setNameError("Name must at least 5 characters!");
     } else {
       setNameError("");
     }
-    if(!subject) {
+    if (!subject) {
       return;
     }
     if (subject.length < 5 || subject.length > 100) {
@@ -75,9 +74,9 @@ function Contact() {
         </h1>
       </div>
 
-      <div className="p-10 flex lg:flex-row flex-col fle gap-[40px]">
-        <div className="w-[80%]">
-          <img className=" hidden lg:block " src={contact} />
+      <div className="p-10 flex justify-center xl:flex-row flex-col">
+        <div className="w-[500px]">
+          <img className=" hidden xl:block " src={contact} />
         </div>
         <div className="mr-[20px] flex justify-center">
           <form className="" onSubmit={handleSubmit}>
