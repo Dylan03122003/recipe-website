@@ -3,7 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
 function Delcious() {
-  const [email, setEmail] = useState();
+  const [email, setEmail] = useState("");
   // const [emailError, setEmailError] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
