@@ -1,7 +1,7 @@
-import { left, right } from "../img";
+import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useState } from "react";
+import { left, right } from "../img";
 function Delcious() {
   const [email, setEmail] = useState("");
   // const [emailError, setEmailError] = useState("");

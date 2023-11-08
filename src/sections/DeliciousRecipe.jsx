@@ -10,25 +10,25 @@ library.add(fas);
 
 const dishes = [
   {
-    recipeID: 1,
+    recipeID: 9,
     img: "src/assets/img/image-34.png",
     name: "Mixed Tropical Fruit Salad with Superfood Boosts",
     foodType: "Healthy",
   },
   {
-    recipeID: 1,
+    recipeID: 10,
     img: "src/assets/img/image-35.png",
     name: "Big and Juicy Wagyu Beef Cheeseburger",
     foodType: "Western",
   },
   {
-    recipeID: 1,
+    recipeID: 11,
     img: "src/assets/img/image-36.png",
     name: "Healthy Japanese Fried Rice with Asparagus",
     foodType: "Healthy",
   },
   {
-    recipeID: 1,
+    recipeID: 12,
     img: "src/assets/img/image-37.png",
     name: "Cauliflower Walnut Vegetarian Taco Meat",
     foodType: "Eastern",
