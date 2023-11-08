@@ -1,50 +1,59 @@
-import "./tasty_recipe.css";
-import { useState } from "react";
-import ReactDOM from "react-dom";
+/* eslint-disable react/prop-types */
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./tasty_recipe.css";
 
 library.add(fas);
 
 const dishes = [
   {
+    recipeID: 1,
     img: "src/assets/img/image-26.png",
     // '\src\assets\img'
     name: "Big and Juicy Wagyu Beef Cheeseburge",
     foodType: "Snack",
   },
   {
+    recipeID: 2,
     img: "src/assets/img/image-27.png",
     name: "Fresh Lime Roasted Salmon with Ginger Sauce",
     foodType: "Fish",
   },
   {
+    recipeID: 3,
     img: "src/assets/img/image-28.png",
     name: "Strawberry Oatmeal Pancake with Honey Syrup",
     foodType: "Breakfast",
   },
   {
+    recipeID: 4,
     img: "src/assets/img/image-29.png",
     name: "Fresh and Healthy Mixed Mayonnaise Salad",
     foodType: "Healthy",
   },
   {
+    recipeID: 1,
     img: "src/assets/img/image-30.png",
     name: "Chicken Meatballs with Cream Chese",
     foodType: "Meat",
   },
   {
+    recipeID: 1,
     img: "src/assets/img/image-31.png",
     name: "Fruity Pancake with Orange & Blueberry",
     foodType: "Sweet",
   },
   {
+    recipeID: 1,
     img: "src/assets/img/image-32.png",
     name: "The Best Easy One Pot Chicken and Rice",
     foodType: "Snack",
   },
   {
+    recipeID: 1,
     img: "src/assets/img/image-33.png",
     name: "The Creamiest Creamy Chicken and Bacon Pasta",
     foodType: "Noodles",
@@ -75,7 +84,9 @@ function Menu({ dishes }) {
             <Dish dish={dish} key={index} />
           </>
         ) : (
-          <Dish dish={dish} key={index} />
+          <Link to={`recipes/${dish.recipeID}`} key={index}>
+            <Dish dish={dish} />
+          </Link>
         )
       )}
     </div>
